@@ -32,14 +32,14 @@ class _RecipeDetailState extends State<RecipeDetail> {
             // แสดงชื่อเมนู
             Text(
               widget.recipe.imgLabel,
-              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
 
             // แสดงคำอธิบายของสูตร
             const SizedBox(height: 8),
             Text(
               widget.recipe.description,
-              style: const TextStyle(fontSize: 16, color: Colors.grey),
+              style: TextStyle(fontSize: 16, color: Colors.grey),
               textAlign: TextAlign.center,
             ),
 
@@ -53,7 +53,7 @@ class _RecipeDetailState extends State<RecipeDetail> {
                   final adjustedQuantity = ingredient.quantity * sliderValue;
 
                   return Text(
-                    '$adjustedQuantity ${ingredient.unit} ${ingredient.name}',
+                    '${adjustedQuantity} ${ingredient.unit} ${ingredient.name}',
                     style: const TextStyle(fontSize: 16.0),
                   );
                 },
@@ -61,14 +61,14 @@ class _RecipeDetailState extends State<RecipeDetail> {
               ),
             ),
 
-            const SizedBox(height: 20),
+            SizedBox(height: 20),
 
             // Slider สำหรับเลือกจำนวนการเสิร์ฟ
             Slider(
               min: 1,
               max: 10,
               divisions: 10,
-              label: '$sliderValue servings',
+              label: '${sliderValue} servings',
               value: sliderValue.toDouble(),
               onChanged: (newValue) {
                 setState(() {

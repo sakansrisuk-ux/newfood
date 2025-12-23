@@ -15,7 +15,7 @@ class Recipe {
 
   static List<Recipe> samples = [
     Recipe(
-      'assets/images/green_curry.webp',
+      'assets/images/Green curry.webp',
       'Green Curry',
       'A rich and spicy Thai green curry made with coconut milk, fresh herbs, and vegetables.',
       [
@@ -30,7 +30,7 @@ class Recipe {
       ],
     ),
     Recipe(
-      'assets/images/pad_thai.webp',
+      'assets/images/Pad Thai.webp',
       'Pad Thai',
       'A classic Thai stir-fried noodle dish with a sweet, sour, and savory sauce, topped with peanuts.',
       [
@@ -44,7 +44,7 @@ class Recipe {
       ],
     ),
     Recipe(
-      'assets/images/pumpkin_curry.webp',
+      'assets/images/Pumpkin Curry.webp',
       'Pumpkin Curry',
       'A creamy Thai curry cooked with tender pumpkin, coconut milk, and aromatic spices.',
       [
@@ -58,7 +58,7 @@ class Recipe {
       ],
     ),
     Recipe(
-      'assets/images/crying_tiger_beef_salad.webp',
+      'assets/images/Crying tiger beef salad.webp',
       'Crying Tiger Beef Salad',
       'A spicy and tangy Thai grilled beef salad mixed with herbs, lime juice, and roasted rice powder.',
       [
